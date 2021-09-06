@@ -34,7 +34,7 @@ const connection = signalR.connect(
 connection.stop();
 ```
 
-##webSocket
+## webSocket
 
 ```js
 import { utils } from 'iv-common';
@@ -58,7 +58,7 @@ ws.connect({
 ws.close();
 ```
 
-##ImageResizer
+## ImageResizer
 
 ```js
 import { utils } from 'iv-common';
@@ -101,12 +101,12 @@ imageResizer.execute(url, 'url', (err, base64) => {
 });
 ```
 
-##transformByte()
+## transformByte()
 ```js
 function transformByte(value: number, precision?: number, suffix?: string): string;
 ```
 
-###usage
+### usage
 ```js
 import { utils } from 'iv-common';
 const { transformByte } = utils;
@@ -121,13 +121,13 @@ transformByte(100000000, 3, 'B');
 // 95.367MB
 ```
 
-##transformDuration()
+## transformDuration()
 ```js
 function transformDuration(value: number): string;
 ```
 Transform seconds to hours:mm:ss.
 
-###usage
+### usage
 ```js
 import { utils } from 'iv-common';
 const { transformDuration } = utils;
@@ -142,14 +142,14 @@ transformDuration(3600);
 // 01:00:00
 ```
 
-##transformObject()
+## transformObject()
 ```js
 function transformObject(object: Object, handle: Handle): Object;
 function Handle(key: string, value: any): Object;
 ```
 Transform key and value in Object with recursive way.
 
-###usage
+### usage
 ```js
 import { utils } from 'iv-common';
 const { transformObject } = utils;
@@ -182,12 +182,12 @@ transformObject([1, 2, 3], (key, value) => {
 // [1, 4, 9]
 ```
 
-##getJsonData()
+## getJsonData()
 ```js
 function getJsonData(url: string): Object | null;
 ```
 
-###usage
+### usage
 ```js
 import { utils } from 'iv-common';
 const { getJsonData } = utils;
