@@ -1,4 +1,4 @@
-import { stringify } from 'qs';
+import {stringify} from 'qs';
 
 class webSocket {
   ws = null;
@@ -13,7 +13,7 @@ class webSocket {
       port: 80
     }, config);
 
-    const { host, port, ...params } = newConfig;
+    const {host, port, ...params} = newConfig;
     const url = `ws://${host}:${port}?${stringify(params)}`;
     let ws = new WebSocket(url, 'echo-protocol');
 

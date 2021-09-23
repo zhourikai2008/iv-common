@@ -10,7 +10,7 @@ npm install --save iv-common
 
 ## Build
 ```bash
-npm run build          # minimized release version will be emitted to /dist
+npm run compile          # compile file will be emitted to /dist
 ```
 
 ## Document
